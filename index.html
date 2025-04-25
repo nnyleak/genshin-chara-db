@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Genshin Impact Character Database</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Genshin Impact Character Database</h1>
+    </header>
+
+    <div class="intro">
+        Search for your favorite genshin characters!
+    </div>
+
+    <div class="widgets">
+        <div class="left-widgets">
+            Element
+            <select id="vision">
+                <option value="any" selected>Any</option>
+                <option value="anemo">Anemo</option>
+                <option value="cryo">Cryo</option>
+                <option value="dendro">Dendro</option>
+                <option value="electro">Electro</option>
+                <option value="geo">Geo</option>
+                <option value="hydro">Hydro</option>
+                <option value="pyro">Pyro</option>
+            </select>
+            <br>
+            Nation
+            <select id="nation">
+                <option value="any" selected>Any</option>
+                <option value="inazuma">Inazuma</option>
+                <option value="liyue">Liyue</option>
+                <option value="mondstadt">Mondstadt</option>
+                <option value="sumeru">Sumeru</option>
+            </select>
+            <br>
+            Weapon
+            <select id="weapon">
+                <option value="any" selected>Any</option>
+                <option value="polearm">Polearm</option>
+                <option value="sword">Sword</option>
+                <option value="catalyst">Catalyst</option>
+                <option value="claymore">Claymore</option>
+                <option value="bow">Bow</option>
+            </select>
+            <br>
+            Rarity
+            <select id="rarity">
+                <option value="any" selected>Any</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <button type="button" id="reset"><b>Reset filters</b></button>
+        </div>
+
+        <div class="right-widgets">
+            Sort:
+            <input type="radio" name="sortBtn" value="AtoZ" checked>A → Z
+            <input type="radio" name="sortBtn" value="ZtoA">Z → A
+            <br>
+            <button type="button" id="search"><b>Search!</b></button>
+            <div id="status">Ready to search!</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Results</h2>
+    <div id="content">
+        <p>--<i>Click the search button!</i>--</p>
+    </div>
+
+    <footer id="footer">
+        <p>Created by Kaelynn Amodia, 2022</p>
+        <a href="documentation.html">Documentation</a>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
